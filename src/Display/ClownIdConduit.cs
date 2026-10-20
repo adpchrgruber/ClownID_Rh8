@@ -145,6 +145,16 @@ namespace ClownID
                 return complete;
             }
             var meshes = obj.GetMeshes(MeshType.Render);
+            if ((meshes == null || meshes.Length == 0) && obj.Geometry is SubD subd)
+            {
+                // Rhino draws SubDs from its own display mesh and often keeps no render
+                // mesh for them, so build one at the default display density.
+                var mesh = Mesh.CreateFromSubD(subd, (int)SubDDisplayParameters.Default().DisplayDensity(subd));
+                if (mesh == null)
+                    return false;
+                items.Add((mesh, xform));
+                return true;
+            }
             if (meshes == null || meshes.Length == 0)
                 return !obj.IsMeshable(MeshType.Render);
             foreach (var mesh in meshes)

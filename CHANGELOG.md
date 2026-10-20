@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.3-beta — 2026-10-21
+
+- **SubD objects now appear in the pass.** Rhino draws SubDs from its own display mesh and
+  usually keeps no render mesh for them, so they were left out. ClownID now meshes them
+  itself at the default display density, including SubDs inside blocks.
+
 ## 0.9.2-beta — 2026-10-14
 
 - **Much faster orbiting in Clown ID.** Object meshes are now kept between frames instead
