@@ -5,6 +5,8 @@
 - **SubD objects now appear in the pass.** Rhino draws SubDs from its own display mesh and
   usually keeps no render mesh for them, so they were left out. ClownID now meshes them
   itself at the default display density, including SubDs inside blocks.
+- Tested on Rhino 8 for Mac and Windows.
+- README: credits and AI disclosure, with citations; `CITATION.cff` for citing ClownID.
 
 ## 0.9.2-beta — 2026-10-14
 

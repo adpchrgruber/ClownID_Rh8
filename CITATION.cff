@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use ClownID, please cite it as below. It was co-created with generative AI; see the README's 'Credits and AI disclosure'."
+type: software
+title: "ClownID: an object-ID (clown) pass for Rhino 8"
+version: 0.9.3-beta
+date-released: 2026-10-21
+authors:
+  - alias: adpchrgruber
+license: MIT
+repository-code: "https://github.com/adpchrgruber/ClownID_Rh8"
+abstract: >-
+  Rhino 8 plug-in that draws every object in one flat, unlit colour derived from its id
+  and exports the view as a clean mask with a JSON colour key, for compositing renders.
+  Developed with generative AI assistance (Claude Opus 5.5 in Claude Code, Anthropic),
+  directed, reviewed and tested by the author.
+keywords:
+  - Rhino
+  - RhinoCommon
+  - clown pass
+  - object ID
+  - mask
+  - compositing
+references:
+  - type: software
+    title: "Claude (Opus 5.5 version)"
+    authors:
+      - name: Anthropic
+    year: 2026
+    url: "https://www.anthropic.com/claude"
+    notes: "Large language model; wrote code and documentation for ClownID."
+  - type: software
+    title: "Claude Code"
+    authors:
+      - name: Anthropic
+    year: 2026
+    url: "https://claude.com/claude-code"
+    notes: "Coding agent used to develop ClownID."
